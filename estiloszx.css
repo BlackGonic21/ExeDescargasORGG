@@ -52,7 +52,7 @@ header {
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin: 40px auto 20px;
-    width: 30%;
+    width: 40%;
 }
 
 section {
@@ -63,9 +63,9 @@ section {
 .item {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px;
-    margin: 30px auto;
+    margin: 25px auto;
     display: inline-block;
-    width: 300px;
+    width: 280px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0px 4px 10px rgba(97, 1, 1, 0.2);
@@ -96,3 +96,42 @@ section {
     background: #000000
 }
 
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        padding: 10px;
+        position: static;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
